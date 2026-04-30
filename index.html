@@ -369,6 +369,17 @@ section { padding: 6.5rem 0; }
   transition: border-color 0.3s; display: flex; flex-direction: column;
 }
 .contact-box:hover { border-color: rgba(184,144,42,0.3); }
+.contact-single {
+  max-width: 520px; margin: 4rem auto 0;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(184,144,42,0.2);
+  border-radius: 3px; padding: 3rem;
+  text-align: center; display: flex; flex-direction: column;
+  align-items: center; gap: 1.25rem;
+  transition: border-color 0.3s;
+}
+.contact-single:hover { border-color: rgba(184,144,42,0.4); }
+.contact-single .contact-desc { color: rgba(255,255,255,0.55); font-size:0.9rem; line-height:1.8; }
 .contact-icon { font-size: 1.8rem; margin-bottom: 1rem; }
 .contact-title {
   font-family: 'Shippori Mincho', serif;
@@ -517,28 +528,6 @@ footer {
         <a href="#service" class="btn-ghost">サービスを見る</a>
       </div>
     </div>
-    <div class="hero-right">
-      <div class="hero-card">
-        <div class="hero-card-label">合格実績・資格</div>
-        <div class="stats-grid">
-          <div class="stat">
-            <div class="stat-num">1年4ヶ月</div>
-            <div class="stat-label">USCPA<br>全科目一発合格</div>
-          </div>
-          <div class="stat">
-            <div class="stat-num">3冠</div>
-            <div class="stat-label">難関資格<br>一発合格</div>
-          </div>
-        </div>
-        <div class="card-divider"></div>
-        <div class="qual-list">
-          <div class="qual-item"><div class="qual-dot"></div>USCPA 全科目一発合格</div>
-          <div class="qual-item"><div class="qual-dot"></div>日商簿記1級 一発合格</div>
-          <div class="qual-item"><div class="qual-dot"></div>税理士試験 簿財 一発合格</div>
-          <div class="qual-item"><div class="qual-dot"></div>上場プライム企業・経理職</div>
-        </div>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -597,7 +586,7 @@ footer {
         <div class="support-item"><span class="support-check">✦</span>初回面談での学習計画設計</div>
         <div class="support-item"><span class="support-check">✦</span>LINEでいつでも質問・相談受付</div>
         <div class="support-item"><span class="support-check">✦</span>科目別学習ロードマップ提供</div>
-        <div class="support-item"><span class="support-check">✦</span>毎週末、あなたの学習に寄り添うメッセージをお届け</div>
+        <div class="support-item"><span class="support-check">✦</span>毎週末、メッセージでご状況を確認し、試験日に間に合うよう学習計画の見直し</div>
       </div>
     </div>
   </div>
@@ -685,8 +674,8 @@ footer {
         <div class="plan-name">ベーシック</div>
         <div class="plan-target">学習ペースはつかめており、詰まったときだけ壁打ちしたい方向け</div>
         <div class="plan-price">
-          <span class="plan-price-launch">¥5,000</span><span class="plan-price-unit">/ 月</span>
-          <div class="plan-price-regular">正規価格 <span>¥10,000</span> → ローンチ価格</div>
+          <span class="plan-price-launch">¥3,000</span><span class="plan-price-unit">/ 月</span>
+          <div class="plan-price-regular">正規価格 <span>¥5,000</span> → ローンチ価格</div>
         </div>
         <div class="plan-features">
           <div class="plan-feature"><span class="feat-check">✦</span>チャット質問 月5回まで</div>
@@ -701,12 +690,12 @@ footer {
         <div class="plan-name">スタンダード</div>
         <div class="plan-target">定期的に方向性を確認しながら、着実に合格へ進めたい方向け</div>
         <div class="plan-price">
-          <span class="plan-price-launch">¥10,000</span><span class="plan-price-unit">/ 月</span>
-          <div class="plan-price-regular">正規価格 <span>¥15,000</span> → ローンチ価格</div>
+          <span class="plan-price-launch">¥5,000</span><span class="plan-price-unit">/ 月</span>
+          <div class="plan-price-regular">正規価格 <span>¥10,000</span> → ローンチ価格</div>
         </div>
         <div class="plan-features">
           <div class="plan-feature"><span class="feat-check">✦</span>チャット質問 無制限</div>
-          <div class="plan-feature"><span class="feat-check">✦</span>月2回の個別面談（各45分）</div>
+          <div class="plan-feature"><span class="feat-check">✦</span>月2回の個別面談</div>
           <div class="plan-feature"><span class="feat-check">✦</span>学習ロードマップ提供</div>
           <div class="plan-feature"><span class="feat-check">✦</span>週次進捗確認メッセージ</div>
           <div class="plan-feature"><span class="feat-check">✦</span>苦手分野の重点アドバイス</div>
@@ -718,12 +707,12 @@ footer {
         <div class="plan-name">プレミアム</div>
         <div class="plan-target">学習習慣の構築から、または追い込みフェーズで密に伴走してほしい方向け</div>
         <div class="plan-price">
-          <span class="plan-price-launch">¥15,000</span><span class="plan-price-unit">/ 月</span>
-          <div class="plan-price-regular">正規価格 <span>¥20,000</span> → ローンチ価格</div>
+          <span class="plan-price-launch">¥10,000</span><span class="plan-price-unit">/ 月</span>
+          <div class="plan-price-regular">正規価格 <span>¥15,000</span> → ローンチ価格</div>
         </div>
         <div class="plan-features">
           <div class="plan-feature"><span class="feat-check">✦</span>チャット質問 無制限</div>
-          <div class="plan-feature"><span class="feat-check">✦</span>毎週の個別面談（各45分）</div>
+          <div class="plan-feature"><span class="feat-check">✦</span>毎週の個別面談</div>
           <div class="plan-feature"><span class="feat-check">✦</span>学習ロードマップ提供</div>
           <div class="plan-feature"><span class="feat-check">✦</span>週次進捗確認メッセージ</div>
           <div class="plan-feature"><span class="feat-check">✦</span>苦手分野の重点アドバイス</div>
@@ -798,6 +787,10 @@ footer {
         <div class="faq-q">繁忙期で学習時間が取れない時期があります。<span class="faq-icon">+</span></div>
         <div class="faq-a">私自身、上場企業の繁忙期を経験しながら合格しました。忙しい時期の乗り越え方も含めて、現実的なスケジュール設計をします。無理な計画は立てません。</div>
       </div>
+      <div class="faq-item">
+        <div class="faq-q">途中で解約することはできますか？<span class="faq-icon">+</span></div>
+        <div class="faq-a">はい、いつでも解約できます。月末までにご連絡いただければ、翌月からの請求は発生しません。縛りは一切ありませんので、まずはお気軽にお試しください。</div>
+      </div>
     </div>
   </div>
 </section>
@@ -811,33 +804,11 @@ footer {
     </div>
     <h2 class="section-title light fade-up">お問い合わせ</h2>
     <p class="section-lead light fade-up delay-1">まずはお気軽にご連絡ください。無料相談も受け付けています。</p>
-    <div class="contact-layout">
-      <div class="contact-box fade-up">
-        <div class="contact-icon">💬</div>
-        <div class="contact-title">LINEで相談する</div>
-        <div class="contact-desc">一番気軽にご連絡いただける方法です。質問・相談・お問い合わせ、何でもどうぞ。通常当日中に返信します。</div>
-        <a href="https://lin.ee/rBaFdL3" target="_blank" class="btn-line">LINEで友達追加</a>
-      </div>
-      <div class="contact-box fade-up delay-1">
-        <div class="contact-icon">✉️</div>
-        <div class="contact-title">フォームで送る</div>
-        <div class="contact-desc">詳しい状況を記入して送っていただくと、より具体的なご返答ができます。</div>
-        <div class="contact-form">
-          <div class="form-row">
-            <label class="form-label">お名前</label>
-            <input class="form-input" type="text" placeholder="山田 太郎">
-          </div>
-          <div class="form-row">
-            <label class="form-label">メールアドレス</label>
-            <input class="form-input" type="email" placeholder="example@email.com">
-          </div>
-          <div class="form-row">
-            <label class="form-label">メッセージ</label>
-            <textarea class="form-textarea" placeholder="学習状況や相談内容をご記入ください"></textarea>
-          </div>
-          <button class="form-btn">送信する</button>
-        </div>
-      </div>
+    <div class="contact-single fade-up">
+      <div class="contact-icon">💬</div>
+      <div class="contact-title">LINEでお気軽にご相談ください</div>
+      <div class="contact-desc">質問・相談・お問い合わせ、何でもどうぞ。通常当日中に返信します。<br>まずは無料相談から、お気軽にどうぞ。</div>
+      <a href="https://lin.ee/rBaFdL3" target="_blank" class="btn-line">LINEで友達追加する</a>
     </div>
   </div>
 </section>
