@@ -444,6 +444,37 @@ footer {
 .fade-up.delay-2 { transition-delay: 0.2s; }
 .fade-up.delay-3 { transition-delay: 0.3s; }
 
+/* VOICES */
+#voices { background: var(--navy); }
+.voices-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem; margin-top: 3.5rem;
+}
+.voice-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(184,144,42,0.18);
+  border-radius: 3px; padding: 2rem 1.75rem;
+  display: flex; flex-direction: column; gap: 1.25rem;
+  transition: border-color 0.3s, transform 0.3s;
+}
+.voice-card:hover { border-color: rgba(184,144,42,0.4); transform: translateY(-3px); }
+.voice-quote-mark {
+  font-family: 'DM Serif Display', serif;
+  font-size: 3rem; color: var(--gold); line-height: 0.8;
+  opacity: 0.6;
+}
+.voice-text {
+  font-size: 0.88rem; line-height: 1.9;
+  color: rgba(255,255,255,0.75); flex: 1;
+}
+.voice-divider {
+  height: 1px; background: rgba(184,144,42,0.2);
+}
+.voice-meta {
+  font-size: 0.76rem; color: var(--gold);
+  letter-spacing: 0.06em;
+}
+
 /* FOR WHOM */
 #forwhom { background: var(--off-white); }
 .forwhom-grid {
@@ -503,6 +534,7 @@ footer {
   <ul class="nav-links">
     <li><a href="#philosophy">理念</a></li>
     <li><a href="#service">サービス</a></li>
+    <li><a href="#voices">受講生の声</a></li>
     <li><a href="#forwhom">対象者</a></li>
     <li><a href="#plans">料金</a></li>
     <li><a href="#profile">プロフィール</a></li>
@@ -588,6 +620,42 @@ footer {
         <div class="support-item"><span class="support-check">✦</span>科目別学習ロードマップ提供</div>
         <div class="support-item"><span class="support-check">✦</span>毎週末、メッセージでご状況を確認し、試験日に間に合うよう学習計画の見直し</div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- VOICES -->
+<section id="voices">
+  <div class="container">
+    <div class="section-label">
+      <div class="section-label-line"></div>
+      <span class="section-label-text">Voices</span>
+    </div>
+    <h2 class="section-title light fade-up">受講生の声</h2>
+    <p class="section-lead light fade-up delay-1">4月の無料モニター期間にご参加いただいた方々からの率直なご感想です。</p>
+    <div class="voices-grid">
+
+      <div class="voice-card fade-up">
+        <div class="voice-quote-mark">"</div>
+        <div class="voice-text">勉強を進める上で、基本的な見直しの仕方や進め方など、とても有意義なアドバイスをいただくことができました。引き続き今回アドバイスしていただいた内容を参考に勉強を進めていきたいと思います。</div>
+        <div class="voice-divider"></div>
+        <div class="voice-meta">モニター参加者 / USCPA学習中</div>
+      </div>
+
+      <div class="voice-card fade-up delay-1">
+        <div class="voice-quote-mark">"</div>
+        <div class="voice-text">間違いのないゴールを設定していただき、おかげさまでこの1ヶ月で「自走」できる力がつきました。残り4科目ですが、新しい科目を受験する毎にサービスを受けたいと存じます。</div>
+        <div class="voice-divider"></div>
+        <div class="voice-meta">モニター参加者 / USCPA学習中</div>
+      </div>
+
+      <div class="voice-card fade-up delay-2">
+        <div class="voice-quote-mark">"</div>
+        <div class="voice-text">試験予定日から逆算して、模擬試験や学習のスケジュールを自身の経験と相手の状況から適切に設定してくださるため、目先の分かりやすい目標に向けて頑張れました。学習段階に応じた勉強方法を教えてくださったため、進め方もより明確になりました。</div>
+        <div class="voice-divider"></div>
+        <div class="voice-meta">モニター参加者 / USCPA学習中</div>
+      </div>
+
     </div>
   </div>
 </section>
